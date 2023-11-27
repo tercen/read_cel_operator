@@ -1,6 +1,7 @@
 library(tercen)
 library(dplyr, warn.conflicts = FALSE)
 library(oligo)
+library(pd.clariom.s.human)
 
 ctx = tercenCtx()
 if (!any(ctx$cnames == "documentId")) stop("Column factor documentId is required.")
