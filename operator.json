@@ -1,9 +1,9 @@
 {
-  "name": "Template_R_operator",
-  "description": "Calculate the mathematical average of the data points in a cell.",
-  "tags": ["basic statistics"],
+  "name": "CEL",
+  "description": "Import microarray data in the CEL format.",
+  "tags": ["import", "omics", "microarray"],
   "authors": ["tercen"],
-  "urls": ["https://github.com/tercen/template-R-operator-lite"],
+  "urls": ["https://github.com/tercen/read_cel_operator"],
   "properties": []
 }
 

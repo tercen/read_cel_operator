@@ -30,7 +30,8 @@ df_probe <- as_tibble((oligo::getProbeInfo(raw_data, c('fid', 'x', 'y')))) %>%
   )
 
 df_sample <- as_tibble(Biobase::pData(raw_data), rownames = "filename") %>%
-  dplyr::mutate(.file_id = as.numeric(index)) %>% select(-index)
+  dplyr::mutate(.file_id = as.numeric(index)) %>% 
+  select(-index)
 
 cnames <- df_sample$.file_id
 names(cnames) <- df_sample$filename
